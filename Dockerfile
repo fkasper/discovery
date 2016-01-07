@@ -12,4 +12,4 @@ ADD fargo.gcfg /etc/eureka.gcfg
 
 #/usr/bin/eureka --config /etc/eureka.gcfg r --port 80 --name RAILS-MONOLTIHIC legacy-mono-client.cluster.sitrep-vatcinc.com:80
 
-ENTRYPOINT ["/app/fargo", "--config", "/etc/fargo.gcfg", "r"]
+ENTRYPOINT ["/app/eureka", "--config", "/etc/fargo.gcfg", "r"]
